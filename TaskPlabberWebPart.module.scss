@@ -1,0 +1,132 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.draggablecontainer{
+  display:flex;
+  border: 2px solid #318456;
+ 
+  .leftsection{
+    width:130px;
+    height:500px;
+    background: grey;
+    //float:left;
+  }
+  .rightsection{
+    overflow-x: auto;
+    //float:left;
+    max-width: 780px;
+    margin-left : 15px;
+    
+  }
+  .addBucket{
+    float: right;
+    margin-right: 20px;
+    font-size: 15px;
+    
+    .container{
+      cursor: pointer;
+      color:#318456;
+    }
+    .inputtext{
+      display : none;
+      
+      input,input:focus{
+      border-bottom: 2px solid #318456;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      background: inherit;
+      margin-right: 4px;
+      }
+      input:focus{
+        background: #d4c5c5;
+      }
+      
+    }
+  }
+  .mainContainer{
+    display : flex;
+    margin-top:30px;
+    overflow-x:auto;
+    margin-top: 55px;
+    height:445px;
+  }
+  .columStyle{
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    margin: 0px 10px 0px 10px;
+    border: 1px solid #ccc;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px;
+    //display: flex;
+    //flex-direction: column;
+
+  }
+  .testStyle{
+    width:100px;
+    height:100px;
+    background:#ccc;
+    margin-bottom:50px;
+    margin-right:30px;
+  }
+  .addTaskCard{
+    display: none;
+    box-shadow: 0px 1px 4px;
+
+    margin: 20px 7px 5px 2px;
+  }
+
+  .addTask,.addTask:focus{
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px;
+    border: 1px solid #ddd;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .title {
+     cursor: pointer;
+     font-weight: 600;
+  }
+  .card{
+    width: 120px;
+    cursor: pointer;
+    margin-top:10px;
+    padding:10px;
+    box-shadow: 0 0 5px;
+    top:0px !important;
+    left:0px !important;
+  P{
+      margin-bottom:0px;
+      margin-top: 0px;
+    }
+
+  }
+  .close{
+    float: right;
+  }
+  .taskname{
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 3px;
+  background: #ececec;
+  }
+  .btnpara{
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .btncard{
+  background: #3e8456;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 14px;
+  color: #fff;
+  }
+}
